@@ -1,0 +1,8 @@
+function breakChocolate(n,m) {
+  console.log(n);
+  console.log(m);
+  if(n*m == 1 || n*m == 0) return 0;
+  return (n*m)-1;
+}
+
+https://www.codewars.com/kata/534ea96ebb17181947000ada/train/javascript

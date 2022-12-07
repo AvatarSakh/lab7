@@ -1,0 +1,16 @@
+function scrollingText(text){
+    var res = [];
+  res.push(text.toUpperCase());
+    for(var i = 1;i<text.length;i++)
+      {
+        var temp = text[0];
+        text = text.slice(1);
+        text += temp;
+        res.push(text.toUpperCase());  
+      }
+  return res;
+}
+
+
+
+https://www.codewars.com/kata/5a995c2aba1bb57f660001fd/train/javascript

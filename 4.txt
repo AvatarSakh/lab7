@@ -1,0 +1,12 @@
+function evaporator(content, evap_per_day, threshold){ 
+  var porog = content*(threshold*0.01);
+  var count = 0;
+  while(content > porog)
+    {
+        content *= 1-evap_per_day*0.01;
+      count++;
+    }
+  return count;
+}
+
+https://www.codewars.com/kata/5506b230a11c0aeab3000c1f/train/javascript

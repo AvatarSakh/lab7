@@ -1,0 +1,12 @@
+function bump(x){
+  var count = 0;
+  for(var i = 0; i < x.length;i++)
+    {
+      if(x[i] == "n") count++;
+    }
+  if(count <=15) return "Woohoo!";
+  else return "Car Dead";
+}
+
+
+https://www.codewars.com/kata/57ed30dde7728215300005fa/train/javascript

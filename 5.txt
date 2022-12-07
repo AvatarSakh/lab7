@@ -1,0 +1,28 @@
+var fibsFizzBuzz = function(n) {
+  var sum = 1;  
+  var mas = [];
+  var backvalue = 0;
+  for(var i = 0;i <n;i++)
+      {
+        console.log(mas);
+        if(sum % 3 == 0 && sum % 5 == 0){
+            mas.push("FizzBuzz");
+          }
+        else{
+            if(sum%3==0)mas.push("Fizz");
+            else
+              {
+            if(sum%5==0)mas.push("Buzz");
+                else
+            mas.push(sum);
+                }
+              
+        }
+        var temp = sum;
+        sum += backvalue;
+        backvalue = temp; 
+      }
+  return mas;
+}
+
+https://www.codewars.com/kata/57bf599f102a39bb1e000ae5/train/javascript

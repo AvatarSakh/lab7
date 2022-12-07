@@ -1,0 +1,15 @@
+function digPow(n, p){
+  var str = String(n);
+  var sum = 0;
+  for(var i=0 ; i< str.length ; i++){
+    sum += Math.pow(str[i], p+i);
+  }
+  
+  if(sum%n == 0){
+     return sum/n;
+  }
+  return -1;
+}
+
+
+https://www.codewars.com/kata/5552101f47fc5178b1000050/train/javascript
